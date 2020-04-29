@@ -34,12 +34,6 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        Distribute.checkForUpdate();
-        AppCenter.start(getApplication(), "aec2c7a9-65fa-4f64-a151-ffe9004d73a9",
-                Analytics.class, Crashes.class);
-        AppCenter.start(getApplication(), "aec2c7a9-65fa-4f64-a151-ffe9004d73a9", Distribute.class);
-        Distribute.setUpdateTrack(UpdateTrack.PRIVATE);
-        Distribute.setEnabled(true);
     }
 
     @Override
