@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        System.out.println("---------------_>>" + Distribute.isEnabled());
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -34,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        Distribute.setListener(new MyDistributeListener());
+        AppCenter.start(getApplication(), "aec2c7a9-65fa-4f64-a151-ffe9004d73a9",
+                Distribute.class, Analytics.class, Crashes.class);
     }
 
     @Override
