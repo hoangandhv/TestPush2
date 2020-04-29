@@ -7,6 +7,8 @@ import com.google.android.material.snackbar.Snackbar;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.distribute.Distribute;
+import com.microsoft.appcenter.distribute.UpdateTrack;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -32,9 +34,12 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-
+        Distribute.checkForUpdate();
         AppCenter.start(getApplication(), "aec2c7a9-65fa-4f64-a151-ffe9004d73a9",
                 Analytics.class, Crashes.class);
+        AppCenter.start(getApplication(), "aec2c7a9-65fa-4f64-a151-ffe9004d73a9", Distribute.class);
+        Distribute.setUpdateTrack(UpdateTrack.PRIVATE);
+        Distribute.setEnabled(true);
     }
 
     @Override
