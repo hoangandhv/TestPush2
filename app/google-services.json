@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "643397904535",
+    "firebase_url": "https://testreactnative-3d165.firebaseio.com",
+    "project_id": "testreactnative-3d165",
+    "storage_bucket": "testreactnative-3d165.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643397904535:android:85cc74d12ef6d4e7ba61d2",
+        "android_client_info": {
+          "package_name": "com.gvtechcom.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643397904535-cpcv8tso9h1ri0i8bsdubpde6amdbkod.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gvtechcom.myapplication",
+            "certificate_hash": "4927f96e0d2ff873e7a706f42fecb5bf7521c576"
+          }
+        },
+        {
+          "client_id": "643397904535-vu245ck9nk26p4a6m25f5n5ho4loueot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrmovXu6FTPeC0KjH4CU0ZVVLgRB2OX90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643397904535-vu245ck9nk26p4a6m25f5n5ho4loueot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

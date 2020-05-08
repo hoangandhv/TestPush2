@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         Distribute.setListener(new MyDistributeListener());
-        AppCenter.start(getApplication(), "aec2c7a9-65fa-4f64-a151-ffe9004d73a9",
+        AppCenter.start(getApplication(), "2ce706d3-85fd-45d5-a847-18bcddce8f9e",
                 Distribute.class, Analytics.class, Crashes.class);
     }
 
